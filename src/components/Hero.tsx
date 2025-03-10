@@ -41,7 +41,7 @@ export default function Hero() {
 
           <div className="hero-image">
             <img 
-              src="../img/name.jpg" 
+              src="../src/img/name.jpg" 
               alt="Profile" 
               className="profile-image"
             />

@@ -3,27 +3,27 @@ import { Github, ExternalLink } from 'lucide-react';
 const projects = [
   {
     title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL",
-    image: "../img/honey.jpg",
+    description: "A full-stack e-commerce solution with React, TypeScript, vite, and PostgreSQL",
+    image: "../src/img/cart.jpg",
     github: "#",
     live: "#",
-    tags: ["React", "Node.js", "PostgreSQL"]
+    tags: ["React", "TypeScript", "PostgreSQL"]
   },
   {
     title: "Hospital Management System",
     description: "Real-time Hospital management application with collaborative features",
-    image: "../img/medical.jpg",
+    image: "../src/img/medical.jpg",
     github: "#",
     live: "#",
     tags: ["python", "sqlite3"]
   },
   {
-    title: "AI Image Generator",
-    description: "Web app that generates images using AI models and APIs",
-    image: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=500&h=300&fit=crop",
+    title: "E-Commerce Platform",
+    description: "e-commerce website for selling shoes using React, Vite, and TypeScript.",
+    image: "../src/img/Shoese.jpg",
     github: "#",
     live: "#",
-    tags: ["Next.js", "OpenAI", "AWS"]
+    tags: ["React", "TypeScript", "Vite", "PostgreSQL"]
   }
 ];
 

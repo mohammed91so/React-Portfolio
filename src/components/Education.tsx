@@ -17,13 +17,13 @@ const education = [
   },
   {
     title: "Degree in development",
-    institution: "La voie inset",
+    institution: "La voie Inset",
     period: "2023 - 2025",
-    description: "Specialized in and software web development",
+    description: "Specialized in software and web development",
     icon: <GraduationCap className="w-6 h-6 text-white" />,
   },
   {
-    title: "Bachelor's in chimistry",
+    title: "Bachelor's in Chimistry",
     institution: "University",
     period: "2020 - 2023",
     description: "Specialized in chimistry",

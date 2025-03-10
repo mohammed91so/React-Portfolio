@@ -21,7 +21,7 @@ export default function Footer() {
           </div>
 
           <p className="footer-text">
-            © {new Date().getFullYear()} NAME. All rights reserved.
+            © {new Date().getFullYear()} MOHAMMED EL HARBOULI. All rights reserved.
           </p>
         </div>
       </div>
