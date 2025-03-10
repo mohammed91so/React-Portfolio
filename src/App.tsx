@@ -17,7 +17,7 @@ function App() {
       <header className="header">
         <div className="container">
           <div className="header-content">
-            <a href="#" className="logo">NAME</a>
+            <a href="#" className="logo">MOHAMMED EL HARBOULI</a>
             
             <button className="menu-button" onClick={toggleMenu}>
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

@@ -4,12 +4,12 @@ const skills = [
   {
     category: "Frontend",
     icon: <Code2 size={24} />,
-    items: ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Tailwind CSS"]
+    items: ["HTML", "Tailwind CSS", "JavaScript", "React", "TypeScript", "Vite"]
   },
   {
     category: "Backend",
     icon: <Terminal size={24} />,
-    items: ["Node.js", "Python", "SQL", "REST APIs", "GraphQL"]
+    items: ["Node.js", "Python", "PHP", "SQL", "REST APIs"]
   },
   {
     category: "Database",

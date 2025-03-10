@@ -1,26 +1,40 @@
-import { GraduationCap, Award, BookOpen } from "lucide-react";
+import { GraduationCap, Microscope, School, BadgeCheckIcon } from "lucide-react";
 
 const education = [
   {
-    title: "Master's in Computer Science",
-    institution: "Tech University",
-    period: "2020 - 2022",
-    description: "Specialized in Artificial Intelligence and Machine Learning",
+    title: "Python Certificate",
+    institution: "Hackerrank",
+    period: "2025",
+    description: "Specialized in python language",
+    icon: <BadgeCheckIcon className="w-6 h-6 text-white" />,
+  },
+  {
+    title: "SQL Certificate",
+    institution: "Hackerrank",
+    period: "2025",
+    description: "Specialized sql language for database",
+    icon: <BadgeCheckIcon className="w-6 h-6 text-white" />,
+  },
+  {
+    title: "Degree in development",
+    institution: "La voie inset",
+    period: "2023 - 2025",
+    description: "Specialized in and software web development",
     icon: <GraduationCap className="w-6 h-6 text-white" />,
   },
   {
-    title: "Bachelor's in Software Engineering",
-    institution: "Engineering College",
-    period: "2016 - 2020",
-    description: "Focus on software development and system design",
-    icon: <BookOpen className="w-6 h-6 text-white" />,
+    title: "Bachelor's in chimistry",
+    institution: "University",
+    period: "2020 - 2023",
+    description: "Specialized in chimistry",
+    icon: <Microscope className="w-6 h-6 text-white" />,
   },
   {
-    title: "Web Development Certification",
-    institution: "Tech Academy",
-    period: "2019",
-    description: "Advanced web development and modern frameworks",
-    icon: <Award className="w-6 h-6 text-white" />,
+    title: "Baccalaureat in Science Phisics",
+    institution: "High School",
+    period: "2020",
+    description: "Specialized in science phisics",
+    icon: <School className="w-6 h-6 text-white" />,
   },
 ];
 
