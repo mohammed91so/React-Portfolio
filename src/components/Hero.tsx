@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter, Instagram } from 'lucide-react';
+import photo from '../img/name.jpg';
 
 export default function Hero() {
   return (
@@ -41,7 +42,7 @@ export default function Hero() {
 
           <div className="hero-image">
             <img 
-              src="../src/img/name.jpg" 
+              src="name.jpg" 
               alt="Profile" 
               className="profile-image"
             />
