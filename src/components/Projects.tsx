@@ -1,7 +1,7 @@
 import { Github, ExternalLink } from 'lucide-react';
 import cartImg from '../img/cart.jpg';
 import medicalImg from '../img/medical.jpg';
-import shoesImg from '../img/Shoese.jpg';
+import shoesImg from '../img/shoes.jpg';
 
 const projects = [
   {
