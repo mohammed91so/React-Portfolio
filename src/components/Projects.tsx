@@ -1,13 +1,13 @@
 import { Github, ExternalLink } from 'lucide-react';
-import cart from '../img/cart.jpg';
-import shoes from '../img/Shoese.jpg'; // Make sure name is correct
-import medical from '../img/medical.jpg';
+import cartImg from '../img/cart.jpg';
+import medicalImg from '../img/medical.jpg';
+import shoesImg from '../img/Shoese.jpg';
 
 const projects = [
   {
     title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with React, TypeScript, vite, and PostgreSQL",
-    image: cart,
+    description: "A full-stack e-commerce solution with React, TypeScript, Vite, and PostgreSQL",
+    image: cartImg,
     github: "#",
     live: "#",
     tags: ["React", "TypeScript", "PostgreSQL"]
@@ -15,15 +15,15 @@ const projects = [
   {
     title: "Hospital Management System",
     description: "Real-time Hospital management application with collaborative features",
-    image: "../src/img/medical.jpg",
+    image: medicalImg,
     github: "#",
     live: "#",
-    tags: ["python", "sqlite3"]
+    tags: ["Python", "SQLite3"]
   },
   {
-    title: "E-Commerce Platform",
-    description: "e-commerce website for selling shoes using React, Vite, and TypeScript.",
-    image: "../src/img/Shoese.jpg",
+    title: "Shoe Store",
+    description: "E-commerce website for selling shoes using React, Vite, and TypeScript.",
+    image: shoesImg,
     github: "#",
     live: "#",
     tags: ["React", "TypeScript", "Vite", "PostgreSQL"]
@@ -56,10 +56,10 @@ export default function Projects() {
                 </div>
 
                 <div className="project-links">
-                  <a href={project.github} className="project-link">
+                  <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
                     <Github size={20} />
                   </a>
-                  <a href={project.live} className="project-link">
+                  <a href={project.live} className="project-link" target="_blank" rel="noopener noreferrer">
                     <ExternalLink size={20} />
                   </a>
                 </div>
