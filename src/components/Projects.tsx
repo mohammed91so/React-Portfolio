@@ -1,10 +1,13 @@
 import { Github, ExternalLink } from 'lucide-react';
+import cart from '../img/cart.jpg';
+import shoes from '../img/Shoese.jpg'; // Make sure name is correct
+import medical from '../img/medical.jpg';
 
 const projects = [
   {
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce solution with React, TypeScript, vite, and PostgreSQL",
-    image: "../src/img/cart.jpg",
+    image: cart,
     github: "#",
     live: "#",
     tags: ["React", "TypeScript", "PostgreSQL"]
