@@ -41,11 +41,11 @@ export default function Hero() {
           </div>
 
           <div className="hero-image">
-            <img 
-              src="name.jpg" 
-              alt="Profile" 
-              className="profile-image"
-            />
+          <img 
+            src={photo} 
+            alt="Profile" 
+            className="profile-image"
+          />
           </div>
         </div>
       </div>
