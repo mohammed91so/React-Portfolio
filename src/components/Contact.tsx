@@ -1,6 +1,33 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
 
 export default function Contact() {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm(
+          'service_i20afw8', // replace with your EmailJS service ID
+          'template_rsdih9m', // replace with your EmailJS template ID
+          form.current,
+        'tZrqQU9fpRlzbEJVm'   // replace with your EmailJS public key
+      )
+      .then(
+        (result) => {
+          console.log('Message sent:', result.text);
+          alert('Message sent!');
+        },
+        (error) => {
+          console.error('Error:', error.text);
+          alert('Something went wrong.');
+        }
+      );
+  };
+}
   return (
     <section id="contact" className="contact">
       <div className="container">
@@ -31,37 +58,20 @@ export default function Contact() {
             </div>
           </div>
 
-          <form className="contact-form">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
             <div className="form-group">
               <label htmlFor="name" className="form-label">Name</label>
-              <input
-                type="text"
-                id="name"
-                className="form-input"
-              />
+              <input type="text" name="name" id="name" className="form-input" required />
             </div>
-            
             <div className="form-group">
               <label htmlFor="email" className="form-label">Email</label>
-              <input
-                type="email"
-                id="email"
-                className="form-input"
-              />
+              <input type="email" name="email" id="email" className="form-input" required />
             </div>
-            
             <div className="form-group">
               <label htmlFor="message" className="form-label">Message</label>
-              <textarea
-                id="message"
-                rows={4}
-                className="form-textarea"
-              ></textarea>
+              <textarea name="message" id="message" rows={4} className="form-textarea" required></textarea>
             </div>
-
-            <button type="submit" className="button">
-              Send Message
-            </button>
+            <button type="submit" className="button">Send Message</button>
           </form>
         </div>
       </div>

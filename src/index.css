@@ -171,6 +171,29 @@
   .button:hover {
     background-color: var(--primary-hover);
   }
+
+  .btn-groupe {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .hire-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .hire-button:hover {
+    background-color: var(--primary-hover);
+  }
   
   /* Skills Section */
   .skills {
@@ -576,6 +599,10 @@
       width: 250px;
       height: 250px;
       margin: 0 auto;
+    }
+
+    .btn-groupe {
+      justify-content: center; /* center on small screens */
     }
   
     .section-title {
