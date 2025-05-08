@@ -8,18 +8,35 @@ import Contact from './components/Contact.tsx';
 import Footer from './components/Footer.tsx';
 
 function App() {
+  // State to manage the menu open/close
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
 
-  // 👇 Disable right-click
+  const [activeSection, setActiveSection] = useState('home');
+
+
   useEffect(() => {
-    const handleContextMenu = (e: MouseEvent) => e.preventDefault();
-    document.addEventListener('contextmenu', handleContextMenu);
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+  
+    sections.forEach((section) => observer.observe(section));
+    
     return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
+      sections.forEach((section) => observer.unobserve(section));
     };
   }, []);
+  
 
   return (
     <div>
@@ -33,11 +50,12 @@ function App() {
             </button>
 
             <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
-              <a href="#home" className="nav-link">Home</a>
-              <a href="#skills" className="nav-link">Skills</a>
-              <a href="#education" className="nav-link">Education</a>
-              <a href="#projects" className="nav-link">Projects</a>
-              <a href="#contact" className="nav-link">Contact</a>
+            <a href="#home" className={`nav-link ${activeSection === 'home' ? 'active' : ''}`} onClick={closeMenu}>Home</a>
+            <a href="#skills" className={`nav-link ${activeSection === 'skills' ? 'active' : ''}`} onClick={closeMenu}>Skills</a>
+            <a href="#education" className={`nav-link ${activeSection === 'education' ? 'active' : ''}`} onClick={closeMenu}>Education</a>
+            <a href="#projects" className={`nav-link ${activeSection === 'projects' ? 'active' : ''}`} onClick={closeMenu}>Projects</a>
+            <a href="#contact" className={`nav-link ${activeSection === 'contact' ? 'active' : ''}`} onClick={closeMenu}>Contact</a>
+
             </nav>
           </div>
         </div>

@@ -1,20 +1,6 @@
-import { GraduationCap, Microscope, School, BadgeCheckIcon } from "lucide-react";
+import { GraduationCap, School, BadgeCheckIcon } from "lucide-react";
 
 const education = [
-  {
-    title: "Python Certificate",
-    institution: "Hackerrank",
-    period: "2025",
-    description: "Specialized in python language",
-    icon: <BadgeCheckIcon className="w-6 h-6 text-white" />,
-  },
-  {
-    title: "SQL Certificate",
-    institution: "Hackerrank",
-    period: "2025",
-    description: "Specialized sql language for database",
-    icon: <BadgeCheckIcon className="w-6 h-6 text-white" />,
-  },
   {
     title: "Degree in development",
     institution: "La voie Inset",
@@ -23,11 +9,18 @@ const education = [
     icon: <GraduationCap className="w-6 h-6 text-white" />,
   },
   {
-    title: "Bachelor's in Chimistry",
-    institution: "University",
-    period: "2020 - 2023",
-    description: "Specialized in chimistry",
-    icon: <Microscope className="w-6 h-6 text-white" />,
+    title: "Python Certificate",
+    institution: "Hackerrank",
+    period: "November-2025",
+    description: "Specialized in python language",
+    icon: <BadgeCheckIcon className="w-6 h-6 text-white" />,
+  },
+  {
+    title: "SQL Certificate",
+    institution: "Hackerrank",
+    period: "Febrary-2025",
+    description: "Specialized sql language for database",
+    icon: <BadgeCheckIcon className="w-6 h-6 text-white" />,
   },
   {
     title: "Baccalaureat in Science Phisics",

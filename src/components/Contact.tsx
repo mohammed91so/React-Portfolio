@@ -11,10 +11,10 @@ export default function Contact() {
     if (form.current) {
       emailjs
         .sendForm(
-          'service_i20afw8', // replace with your EmailJS service ID
-          'template_rsdih9m', // replace with your EmailJS template ID
+          'service_i20afw8', // EmailJS service ID
+          'template_rsdih9m', // EmailJS template ID
           form.current,
-        'tZrqQU9fpRlzbEJVm'   // replace with your EmailJS public key
+        'tZrqQU9fpRlzbEJVm'   // EmailJS public key
       )
       .then(
         (result) => {
@@ -45,7 +45,7 @@ export default function Contact() {
             <div className="contact-details">
               <div className="contact-item">
                 <Mail className="contact-icon" size={20} />
-                <span>mohammedelharbouli91@gmail.com</span>
+                <span>contact@suport.com</span>
               </div>
               <div className="contact-item">
                 <Phone className="contact-icon" size={20} />
@@ -71,7 +71,7 @@ export default function Contact() {
               <label htmlFor="message" className="form-label">Message</label>
               <textarea name="message" id="message" rows={4} className="form-textarea" required></textarea>
             </div>
-            <button type="submit" className="button">Send Message</button>
+            <button type="submit" className="submit-button">Send Message</button>
           </form>
         </div>
       </div>

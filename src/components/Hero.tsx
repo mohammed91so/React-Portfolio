@@ -40,7 +40,7 @@ export default function Hero() {
 
             <div className="btn-groupe">
               <a href="#contact" className="button">Get in Touch</a>
-              <a href="" className="hire-button">Hire Me</a>
+              <a href="../img/my-cv.pdf" download className="hire-button">Hire Me</a>
             </div>
 
           </div>

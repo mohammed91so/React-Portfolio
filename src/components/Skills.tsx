@@ -9,17 +9,17 @@ const skills = [
   {
     category: "Backend",
     icon: <Terminal size={24} />,
-    items: ["Node.js", "Python", "PHP", "SQL", "REST APIs"]
+    items: ["Python", "PHP", "SQL"]
   },
   {
     category: "Database",
     icon: <Database size={24} />,
-    items: ["PostgreSQL", "MongoDB", "Redis", "Supabase"]
+    items: ["PostgreSQL", "MongoDB", "Supabase"]
   },
   {
     category: "Design",
     icon: <Palette size={24} />,
-    items: ["Figma", "Adobe XD", "UI/UX", "Responsive Design"]
+    items: ["UI/UX", "Responsive Design"]
   }
 ];
 
