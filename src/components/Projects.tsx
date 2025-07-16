@@ -1,24 +1,24 @@
 import { Github, ExternalLink } from 'lucide-react';
-import cartImg from '../img/cart.jpg';
-import medicalImg from '../img/medical.jpg';
+import ecomImg from '../img/ecom.jpg';
 import shoesImg from '../img/shoes.jpg';
+import rahalaImg from '../img/rahala.jpg';
 
 const projects = [
   {
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce solution with React, TypeScript, Vite, and PostgreSQL",
-    image: cartImg,
+    image: ecomImg,
     github: "#",
     live: "#",
-    tags: ["React", "TypeScript", "PostgreSQL"]
+    tags: ["React", "Laravel", "MySQL"]
   },
   {
-    title: "Hospital Management System",
-    description: "Real-time Hospital management application with collaborative features",
-    image: medicalImg,
+    title: "RAHALA - Travel Booking Platform",
+    description: "A travel booking platform built with React, TypeScript, and Vite, featuring a LARAVEL backend.",
+    image: rahalaImg,
     github: "#",
     live: "#",
-    tags: ["Python", "SQLite3"]
+    tags: ["React", "Laravel", "MySQL"]
   },
   {
     title: "Shoe Store",

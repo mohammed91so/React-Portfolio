@@ -9,12 +9,12 @@ const skills = [
   {
     category: "Backend",
     icon: <Terminal size={24} />,
-    items: ["Python", "PHP", "SQL"]
+    items: ["Laravel", "PHP", "REST APIs"]
   },
   {
     category: "Database",
     icon: <Database size={24} />,
-    items: ["PostgreSQL", "MongoDB", "Supabase"]
+    items: ["PostgreSQL", "MongoDB", "MySQL", "SQLite"]
   },
   {
     category: "Design",
